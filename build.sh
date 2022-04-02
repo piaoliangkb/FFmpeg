@@ -26,7 +26,7 @@ export CROSS_COMPILE=$TOOLCHAIN/bin/$CROSS_PREFIX_BUILD_TOOL_PATH
   --arch=$ARCH \
   --cc="$CROSS_COMPILE"clang \
   --nm="$TOOLCHAIN"/bin/llvm-nm \
-	--ar="$TOOLCHAIN"/bin/llvm-ar \
+  --ar="$TOOLCHAIN"/bin/llvm-ar \
   --ranlib="$TOOLCHAIN"/bin/llvm-ranlib \
   --pkg-config="pkg-config" \
   --sysroot="$SYSROOT" \
@@ -35,6 +35,4 @@ export CROSS_COMPILE=$TOOLCHAIN/bin/$CROSS_PREFIX_BUILD_TOOL_PATH
   --enable-decoder=h264_mediacodec \
   --enable-decoder=hevc_mediacodec \
   --enable-decoder=mpeg4_mediacodec \
-  --enable-debug=3 \
-  --disable-optimizations \
   --extra-cflags="$ADDI_CFLAGS"
